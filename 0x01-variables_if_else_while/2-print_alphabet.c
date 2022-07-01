@@ -8,7 +8,7 @@ int main(void)
 {
 	char letter = 'a';
 	/* betty style doc for function main goes there */
-	while (letter < 'z')
+	while (letter <= 'z')
 	{
 		putchar(letter);
 		letter++;
