@@ -10,8 +10,9 @@ int main(void)
 	/* betty style doc for function main goes there */
 	while (num <= 9)
 	{
-		putchar(num);
+		putchar(num + '0');
 		num++;
 	}
+	printf("\n");
 	return (0);
 }
