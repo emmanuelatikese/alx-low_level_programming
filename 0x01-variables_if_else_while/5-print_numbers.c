@@ -10,7 +10,7 @@ int main(void)
 	/* betty style doc for function main goes there */
 	while (num < 10)
 	{
-		printf("%d\n", num);
+		printf("%d", num);
 		num++;
 	}
 	return (0);
