@@ -13,5 +13,6 @@ int main(void)
 		putchar(letter);
 		last--;
 	}
+	printf("\n");
 	return (0);
 }
