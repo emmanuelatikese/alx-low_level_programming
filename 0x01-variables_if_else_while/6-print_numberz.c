@@ -8,10 +8,9 @@ int main(void)
 {
 	int num = 0;
 	/* betty style doc for function main goes there */
-	while (num <= 9)
+	for (num = 0; num <= 9; num++)
 	{
 		putchar(num + '0');
-		num++;
 	}
 	printf("\n");
 	return (0);
