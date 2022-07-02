@@ -17,5 +17,6 @@ int main(void)
 			putchar(letter);
 			letter++;
 	} while (letter <= 'z');
+	printf("\n");
 	return (0);
 }
