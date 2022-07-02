@@ -10,7 +10,7 @@ int main(void)
 	/* betty style doc for function main goes there */
 	for (num; num < 10; num++)
 	{
-		printf("%d", num);
+		printf("%d\n", num);
 	}
 	return (0);
 }
