@@ -11,7 +11,7 @@ int main(void)
 	while (letter >= 'a')
 	{
 		putchar(letter);
-		last--;
+		letter--;
 	}
 	printf("\n");
 	return (0);
