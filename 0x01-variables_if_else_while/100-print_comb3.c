@@ -10,6 +10,10 @@ int main(void)
 	/* betty style doc for function main goes there */
 	for (first = 0; first < 9; first++)
 	{
+		if (first == 5 && last < 6)
+		{
+			continue;
+		}
 		if (first == 7 && last < 8)
 		{
 			continue;
