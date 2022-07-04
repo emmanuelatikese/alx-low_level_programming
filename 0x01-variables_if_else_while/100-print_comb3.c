@@ -18,7 +18,8 @@ int main(void)
 				continue;
 			putchar((first % 10) + '0');
 			putchar((last % 10) + '0');
-			putchar(',');
+			if (first < 8)
+				putchar(',');
 			putchar(' ');
 		}
 	}
