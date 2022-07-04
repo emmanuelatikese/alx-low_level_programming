@@ -31,9 +31,12 @@ int main(void)
 			putchar((first % 10) + '0');
 			putchar((last % 10) + '0');
 			if (first < 8)
+			{
 				putchar(',');
-			putchar(' ');
+				putchar(' ');
+			{
 		}
 	}
+	putchar('\n');
 	return (0);
 }
