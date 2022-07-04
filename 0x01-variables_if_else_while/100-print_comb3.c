@@ -22,6 +22,12 @@ int main(void)
 				continue;
 			if (first == 4 && last < 5)
 				continue;
+			if (first == 6 && last < 7)
+				continue;
+			if (first == 7 && last < 8)
+				continue;
+			if (first == 1 && last == 1)
+				continue;
 			putchar((first % 10) + '0');
 			putchar((last % 10) + '0');
 			if (first < 8)
