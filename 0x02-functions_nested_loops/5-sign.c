@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *print_sign - Entry point
- *@c: input int n must be an integer
+ *@n: input int n must be an integer
  * Return: Always 0
  */
 
