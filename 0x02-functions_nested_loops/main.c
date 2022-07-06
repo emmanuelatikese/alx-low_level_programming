@@ -7,7 +7,6 @@
 #include "5-sign.c"
 #include "6-abs.c"
 #include "7-print_last_digit.c"
-#include <stdio.h>
 int main(void)
 {
 	int r;
