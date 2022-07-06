@@ -18,4 +18,5 @@ int main(void)
 	}
 	printf("%d", b);
 	printf("\n");
+	return (0);
 }
