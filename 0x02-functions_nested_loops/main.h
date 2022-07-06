@@ -1,5 +1,6 @@
 #ifndef _MAIN__H__
 #define _MAIN__H__
+#include <stdio.h>
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -9,4 +10,5 @@ int print_sign(int n);
 int _abs(int c);
 int print_last_digit(int n);
 int add(int, int);
+void print_to_98(int n);
 #endif
