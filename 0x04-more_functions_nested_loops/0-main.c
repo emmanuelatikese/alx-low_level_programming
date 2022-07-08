@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include "0-isupper.c"
 #include "_putchar.c"
 #include "1-isdigit.c"
