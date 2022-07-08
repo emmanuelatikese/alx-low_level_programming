@@ -3,6 +3,10 @@
 #include "0-isupper.c"
 #include "_putchar.c"
 #include "1-isdigit.c"
+#include "2-mul.c"
+#include "3-print_numbers.c"
+#include "4-print_most_numbers.c"
+
 /**
  * main - check the code.
  *
@@ -10,12 +14,7 @@
  */
 int main(void)
 {
-
-	char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
+	printf("%d\n", mul(98, 1024));
+    printf("%d\n", mul(-402, 4096));
     return (0);
 }
