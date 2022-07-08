@@ -15,8 +15,11 @@
  */
 int main(void)
 {
-	print_square(2);
-    print_square(10);
-    print_square(0);
+	   char c;
+
+    c = '0';
+    printf("%c: %d\n", c, _isdigit(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isdigit(c));
     return (0);
 }
