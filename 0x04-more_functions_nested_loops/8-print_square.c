@@ -9,7 +9,11 @@ void print_square(int size)
 	int x, count;
 
 	for (count = 1; count <= size; count++)
+	{
 		for (x = 1; x <= size; x++)
+		{
 			_putchar('#');
+		}
 		_putchar('\n');
+	}
 }
