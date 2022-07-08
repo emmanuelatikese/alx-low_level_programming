@@ -8,6 +8,7 @@
 #include "4-print_most_numbers.c"
 #include "5-more_numbers.c"
 #include "6-print_line.c"
+#include "8-print_square.c"
 /**
  * main - check the code.
  *
@@ -15,6 +16,8 @@
  */
 int main(void)
 {
-	more_numbers();
+	print_square(2);
+    print_square(10);
+    print_square(0);
     return (0);
 }
