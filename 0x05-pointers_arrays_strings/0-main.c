@@ -12,9 +12,13 @@
  */
 int main(void)
 {
-	char *str;
+	 int a;
+    int b;
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    print_rev(str);
+    a = 98;
+    b = 42;
+    printf("a=%d, b=%d\n", a, b);
+    swap_int(&a, &b);
+    printf("a=%d, b=%d\n", a, b);
     return (0);
 }
