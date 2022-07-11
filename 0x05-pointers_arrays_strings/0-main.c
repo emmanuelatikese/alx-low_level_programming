@@ -4,6 +4,7 @@
 #include "2-strlen.c"
 #include "_putchar.c"
 #include "3-puts.c"
+#include "4-print_rev.c"
 /**
  * main - Entry point
  *
@@ -14,6 +15,6 @@ int main(void)
 	char *str;
 
     str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    _puts(str);
+    print_rev(str);
     return (0);
 }
