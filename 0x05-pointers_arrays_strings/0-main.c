@@ -1,6 +1,7 @@
 #include "main.h"
 #include "0-reset_to_98.c"
 #include "1-swap.c"
+#include "2-strlen.c"
 /**
  * main - Entry point
  *
@@ -8,13 +9,11 @@
  */
 int main(void)
 {
-	int a;
-    int b;
+	char *str;
+    int len;
 
-    a = 98;
-    b = 42;
-    printf("a=%d, b=%d\n", a, b);
-    swap_int(&a, &b);
-    printf("a=%d, b=%d\n", a, b);
+    str = "My first strlen!";
+    len = _strlen(str);
+    printf("%d\n", len);
     return (0);
 }
