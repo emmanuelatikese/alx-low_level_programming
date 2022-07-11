@@ -5,6 +5,7 @@
 #include "_putchar.c"
 #include "3-puts.c"
 #include "4-print_rev.c"
+#include "6-puts2.c"
 /**
  * main - Entry point
  *
@@ -12,9 +13,9 @@
  */
 int main(void)
 {
-	 char *str;
+	char *str;
 
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    print_rev(str);
+    str = "0123456789";
+    puts2(str);
     return (0);
 }
