@@ -6,6 +6,7 @@
 #include "3-puts.c"
 #include "4-print_rev.c"
 #include "6-puts2.c"
+#include "7-puts_half.c"
 /**
  * main - Entry point
  *
@@ -16,6 +17,6 @@ int main(void)
 	char *str;
 
     str = "0123456789";
-    puts2(str);
+    puts_half(str);
     return (0);
 }
