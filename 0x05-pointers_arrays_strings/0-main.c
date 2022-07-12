@@ -1,12 +1,6 @@
 #include "main.h"
-#include "0-reset_to_98.c"
-#include "1-swap.c"
-#include "2-strlen.c"
 #include "_putchar.c"
-#include "3-puts.c"
-#include "4-print_rev.c"
-#include "6-puts2.c"
-#include "7-puts_half.c"
+#include "5-rev_string.c"
 /**
  * main - Entry point
  *
@@ -14,9 +8,10 @@
  */
 int main(void)
 {
-	char *str;
+	char s[10] = "My School";
 
-    str = "0123456789";
-    puts_half(str);
-    return (0);
+    printf("%s\n", s);
+    rev_string(s);
+    printf("%s\n", s);
+    return (0);	
 }
