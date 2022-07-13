@@ -1,6 +1,7 @@
 #include "main.h"
 #include "_putchar.c"
 #include "5-rev_string.c"
+#include "9-strcpy.c"
 /**
  * main - Entry point
  *
@@ -8,10 +9,11 @@
  */
 int main(void)
 {
-	char s[10] = "My School";
+	char s1[98];
+    char *ptr;
 
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
-    return (0);	
+    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
+    printf("%s", s1);
+    printf("%s", ptr);
+    return (0);
 }
