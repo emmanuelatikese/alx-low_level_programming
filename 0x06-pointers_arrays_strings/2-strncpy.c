@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * _strncpy - Entry point
  *@dest: input dest is the first parameter
  *@src: input src is the second parameter
  *@n: input n is the third parameter
