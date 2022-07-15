@@ -6,6 +6,7 @@
 #include "2-strncpy.c"
 #include "3-strcmp.c"
 #include "5-string_toupper.c"
+#include "7-leet.c"
 /**
  * main - check the code
  *
@@ -13,12 +14,11 @@
  */
 int main(void)
 {
- 	char str[] = "Look up!\n";
-    char *ptr;
+	char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+    char *p;
 
-    ptr = string_toupper(str);
-    printf("%s", ptr);
-    printf("%s", str);
-    return (0);   
-
+    p = leet(s);
+    printf("%s", p);
+    printf("%s", s);
+    return (0);
 }
