@@ -2,35 +2,27 @@
 /**
  *  str_concat- Entry point
  *@s1: input s1 is the first argument
- *@s2: input s2 is the second argument 
+ *@s2: input s2 is the second argument
  * Return: Always 0
  */
 char *str_concat(char *s1, char *s2)
 {
-	int a = 0, b = 0, c = 0, d = 0;
+	int a = 0, b = 0, c = 0;
 
 	char *w;
 
 	if (s1 == NULL)
-		s1 == " ";
+		s2 = "";
 	if (s2 == NULL)
-		s2 == " ";
-	while (s1[a])
-		a++;
-	while (s2[b])
-		b++;
-	c = a + b;
-	w = (char *)malloc(ln * sizeof(char) + 1);
-	b = 0;
-	while (d < c)
-	{
-		if (d <= a)
-			w[d] = s1[d];
-		if (d > a)
-		{
-			w[d] = s2[d];
-			b++;
-		}
-		d++;
-	}
+		s1 = "";
+	for (a = 0; s1[a] || s2[a]; a++)
+		c++;
+	w = malloc(sizeof(char) * c);
+	if (w == NULL)
+		return (NULL);
+	for (a = 0; s1[a]; a++)
+		w[b++] = s1[a];
+	for (a = 0; s2[a]; a++)
+		w[b++] = s2[a];
+	return (w);
 }
