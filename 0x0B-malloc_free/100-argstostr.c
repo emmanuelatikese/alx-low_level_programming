@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (b = 0; av[a][b]; b++)
 		{
-			e[c++] = av[a][b];	
+			w[c++] = av[a][b];
 		}
 		w[c++] = '\n';
 	}
