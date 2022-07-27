@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 		{
 			e[c++] = av[a][b];
 		}
-		w[c++] = '\n';
+		e[c++] = '\n';
 	}
 	w[d] = '\0';
 	return (e);
