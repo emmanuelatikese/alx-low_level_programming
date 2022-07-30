@@ -7,13 +7,20 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int l = nmemb, i = size;
+	unsigned int l = nmemb, i = size, a;
 
-	unsigned int *ptr = (unsigned int *)malloc(sizeof(unsigned int) * (l + i));
+	char *f;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	void *ptr = malloc(i * l);
 
 	if (ptr == NULL)
 		return (NULL);
-	if (nmemb && size == 0)
-		return (NULL);
+	f = ptr;
+
+	for (a = 0; a < (l * i); a++)
+		f[a] = '\0';
 	return (ptr);
 }
