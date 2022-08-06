@@ -1,9 +1,6 @@
 #ifndef _DOG__H__
 #define _DOG__H__
 #include <stdio.h>
-/**
- *dog - Entry point
- */
 struct dog
 {
 	char *name;
