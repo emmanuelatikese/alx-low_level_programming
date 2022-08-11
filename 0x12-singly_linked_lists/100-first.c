@@ -1,4 +1,4 @@
-#include "lists.h"
+#include <stdio.h>
 /**
  *free_list - Entry point
  * Return: Always 0
