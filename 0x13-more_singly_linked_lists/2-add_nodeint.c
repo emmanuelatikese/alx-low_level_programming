@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  *add_nodeint - Entry point
- *@h: input h is the first argument
+ *@head: input head is the first argument
  *@n: input n is the second argument
  * Return: Always 0
  */
