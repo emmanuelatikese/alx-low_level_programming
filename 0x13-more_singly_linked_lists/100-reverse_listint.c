@@ -18,6 +18,6 @@ listint_t *reverse_listint(listint_t **head)
 		b = *head;
 		*head = a;
 	}
-	(**head).next = behind;
+	(**head).next = b;
 	return (*head);
 }
