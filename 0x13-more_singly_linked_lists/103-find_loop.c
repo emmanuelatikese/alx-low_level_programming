@@ -19,7 +19,7 @@ listint_t *find_listint_loop(listint_t *head)
 			t = head;
 			while (t != h)
 			{
-				t = (t).next;
+				t = (*t).next;
 				h = (*h).next;
 			}
 			return (t);
