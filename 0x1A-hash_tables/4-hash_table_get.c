@@ -13,6 +13,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	unsigned long i;
 
+	if (!(ht) || !(key) || *key == '\0')
+		return (NULL);
+
+	if (x <= ht->size)
+		return (NULL);
+
 	for (i = x; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
