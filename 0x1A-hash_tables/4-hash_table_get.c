@@ -11,6 +11,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int x;
 
+	hash_node_t *new;
 
 	if (!(ht) || !(key) || *key == '\0')
 		return (NULL);
@@ -20,7 +21,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (x >= ht->size)
 		return (NULL);
 
-	hash_node_t *new = ht->array[x];
+	new = ht->array[x];
 
 	while (new)
 	{
