@@ -13,9 +13,6 @@ void hash_table_delete(hash_table_t *ht)
 	hash_table_t *h = ht;
 	unsigned long int x = 0;
 
-	if (!ht)
-		return;
-
 	while (x < ht->size)
 	{
 		if (ht->array[x])
