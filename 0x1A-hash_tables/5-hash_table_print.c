@@ -9,14 +9,14 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned long int i, x;
+	unsigned long int i;
+	unsigned char x = 0;
 	hash_node_t *new;
 
 	if (!ht)
 		return;
 
 	printf("{");
-	x = 0;
 
 	while (x < ht->size)
 	{
