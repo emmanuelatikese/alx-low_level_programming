@@ -23,5 +23,6 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 int cus_strcmp(const char *s1, const char *s2);
-
+void _putstr(const char *s);
+int _putchar(char c);
 #endif
