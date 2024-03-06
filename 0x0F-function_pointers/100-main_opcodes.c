@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - prints hex
  * @argv: list of args
  * @argc: len of args
+ * Return: returns int
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i = 0, a;
 	char *b;
@@ -14,7 +14,7 @@ void main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(1);
+		return (1);
 	}
 	a = atoi(argv[1]);
 	b = (char *)main;
@@ -22,7 +22,7 @@ void main(int argc, char *argv[])
 	if (a < 0)
 	{
 		printf("Error\n");
-		exit(2);
+		return (2);
 	}
 
 	for (i = 0; i <= a; i++)
@@ -35,4 +35,5 @@ void main(int argc, char *argv[])
 		if (i == a)
 			printf("\n");
 	}
+	return (0);
 }
