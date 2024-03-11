@@ -1,4 +1,5 @@
 #!/bin/bash
+'''This is about converting .o to .so'''
 gcc -c -fPIC _putchar.c -o _putchar.o
 gcc -c -fPIC _islower.c -o _islower.o
 gcc -c -fPIC _isalpha.c -o _isalpha.o
