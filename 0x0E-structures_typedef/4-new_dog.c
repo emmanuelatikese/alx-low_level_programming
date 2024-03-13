@@ -47,10 +47,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int n_count = strl_(name) + 1, o_count = strl_(owner) + 1;
 
 	if (!(new))
+	{
+		free(new);
 		return (NULL);
+	}
 
-	new->name = malloc(sizeof(char) *n_count);
-	new->owner = malloc(sizeof(char) *o_count);
+	new->name = malloc(sizeof(char) * n_count);
+	new->owner = malloc(sizeof(char) * o_count);
 
 	if (!(new->owner) || !(new->name))
 	{
